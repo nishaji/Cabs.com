@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ListView
+        android:descendantFocusability="blocksDescendants"
+        android:smoothScrollbar="true"
+        android:id="@+id/carlistview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:cacheColorHint="#fff"
+        android:fastScrollEnabled="false"
+        android:clickable="true"
+        android:layout_marginBottom="36dp"
+       />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="10dp"
+            app:backgroundTint="#009688"
+            android:src="@drawable/car1"/>
+    </FrameLayout>
+

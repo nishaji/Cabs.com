@@ -1,0 +1,295 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            >
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/tool_bar"
+                />
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="40dp">
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/textView_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Route:"
+                    android:textColor="#000"/>
+
+                <Spinner
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/route"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:spinnerMode="dialog"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp">
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cars:"
+                    android:textColor="#000"/>
+
+                <Spinner
+                    android:layout_marginLeft="22dp"
+                    android:id="@+id/cars"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:spinnerMode="dialog"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp">
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drivers:"
+                    android:textColor="#000"/>
+
+                <Spinner
+                    android:layout_marginLeft="9dp"
+                    android:id="@+id/drivers"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:spinnerMode="dialog"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp">
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seats:"
+                    android:textColor="#000"/>
+
+                <Spinner
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/seats"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:spinnerMode="dialog"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp">
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:id="@+id/textView_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Model:"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:layout_marginLeft="14dp"
+                    android:id="@+id/model"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp">
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fare:"
+                    android:textColor="#000"/>
+
+                <EditText
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/editText"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:maxLength="15"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp">
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trip Time:"
+                    android:textColor="#000"/>
+
+                <ImageButton
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/pick_time"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_arrow_drop_down_black_24dp"/>
+                <CheckBox
+                    android:visibility="gone"
+                    android:id="@+id/mode_24_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mode_24_hours" />
+                <TextView
+                    android:layout_marginLeft="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trip Date:"
+                    android:textColor="#000"/>
+
+                <ImageButton
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/pick_date"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_arrow_drop_down_black_24dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="8dp">
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_below="@+id/pick_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time_textview"
+                    android:textColor="#000"
+                    android:typeface="monospace"/>
+
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:layout_below="@+id/pick_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/date_textview"
+                    android:textColor="#000"
+                    android:typeface="monospace"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:layout_width="150dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnsubmit"
+            android:text="Book Ryde"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:background="@drawable/btn4"
+            android:layout_marginLeft="120dp"/>
+    </LinearLayout>
+</ScrollView>

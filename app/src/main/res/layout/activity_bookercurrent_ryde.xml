@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        >
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/tool_bar"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/current"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enjot Ryde"
+        android:textColor="#2582C5"
+        android:layout_marginLeft="45dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="left"/>
+
+
+
+
+</LinearLayout>

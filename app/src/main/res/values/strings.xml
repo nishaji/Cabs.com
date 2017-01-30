@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Cabs.com</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_main">Main in</string>
+    <string name="intro_text">Long click to exit the map.</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_addcar">AddcarActivity</string>
+    <string name="title_activity_successful">SuccessfulActivity</string>
+    <string name="title_activity_firstlaunchtutorial">Firstlaunchtutorial</string>
+    <string name="product_name">Product Name</string>
+    <string name="txt_image_slider">Image Slideshow</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="time_out">Time Out</string>
+    <string name="error_occured">Error Occurred</string>
+    <string name="pick_time">Pick Time</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="mode_24_hours">Use 12 hour mode</string>
+    <string name="mode_dark_time">Use dark theme</string>
+    <string name="mode_dark_date">Use dark theme</string>
+    <string name="mode_custom_accent">Use custom accent</string>
+    <string name="vibrate_time">Vibrate on touch</string>
+    <string name="vibrate_date">Vibrate on touch</string>
+    <string name="dismiss_time">Dismiss on pause (eg: orientation change)</string>
+    <string name="dismiss_date">Dismiss on pause (eg: orientation change)</string>
+    <string name="title_time">Show a title</string>
+    <string name="title_date">Show a title</string>
+    <string name="show_year_first">Show the year picker first</string>
+    <string name="enable_seconds">Show seconds picker</string>
+    <string name="navigation_item_1">Provider</string>
+    <string name="navigation_item_2">Events</string>
+    <string name="starred_string">Offer</string>
+    <string name="Offer_ryde">Offer  Ryde</string>
+    <string name="add_car">Add car</string>
+    <string name="about_us">Aboutus</string>
+    <string name="trip_detail">Trip Detail</string>
+    <string name="subheader">Subheader</string>
+    <string name="trash_string">Trash</string>
+    <string name="all_mail_string">All mails</string>
+    <string name="search">Search</string>
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+    <string name="title_activity_welcome1">Cabs.com</string>
+    <string name="title_activity_add_driver">AddDriverActivity</string>
+    <string name="title_activity_trips">TripsActivity</string>
+    <string name="facebook_app_id">1683191791920364</string>
+    <string name="aboutus">"Ever decided to take a weekend holiday from the city,
+        but spent hours finding a car rental? Or taken one on the reference of a friend,
+        only to have the operator leave you stranded in the middle and make you miss an
+        important business meeting? Or did the cab just not show up?
+        Well, we've faced the same problems too. And we decided to help fix it. So we've created RYDE,
+        a marketplace for all types of cabs and car rentals. It's very simple: You enter your city
+        and your need. We search the available inventory of our partners and provide you with a list
+        of results and prices of different available cars from different operators. You can see our
+        rating of that operator, what other customers said of them, and then book it right here on RYDE.
+        Or you can call us and we'll help you through the process! It's that simple!"</string>
+    <string name="txtCredits">txtCredits</string>
+    <string name="title_activity_tab1">title_activity_tab1</string>
+    <string name="title_activity_tab2">title_activity_tab2</string>
+    <string name="title_activity_tab3">title_activity_tab3</string>
+    <string name="ranklabel">"FirstNmae : "</string>
+    <string name="countrylabel">"LastName : "</string>
+    <string name="populationlabel">"Phone : "</string>
+    <string name="title_activity_book">BookActivity</string>
+    <string name="title_activity_booking_history">BookingHistoryActivity</string>
+    <string name="title_activity_bookinghistory1">Bookinghistory1</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="action_search">action_search</string>
+    <string name="skip">Y U DO DIS TO ME?</string>
+
+    <style name="DefaultButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#979797</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowColor">#f9f9f9</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <string name="no_geocoder_available">No geocoder available</string>
+
+    <string name="fetch_address">Fetch address</string>
+
+    <string name="address_found">Address found</string>
+    <string name="menu_legalnotices">Legal Notices</string>
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+    <string name="title_activity_login_signup">LoginSignupActivity</string>
+    <string name="title_activity_welcome2">Cabs.com</string>
+    <string name="title_activity_bookings">Bookings</string>
+    <string name="title_activity_logout">LogoutActivity</string>
+    <string name="hello">hello</string>
+    <string name="title_activity_maps">title_activity_maps</string>
+    <string name="title_activity_offer">title_activity_offer</string>
+    <string name="title_activity_testtool">Testtool</string>
+    <string name="signout">signout</string>
+    <string name="title_activity_maps2">title_activity_maps2</string>
+    <string name="title_activity_home">title_activity_home</string>
+    <string name="title_activity_logOut">title_activity_logOut</string>
+    <string name="title_activity_edit_add_car">EditAddCarActivity</string>
+    <string name="title_activity_edit_trip">EditTripActivity</string>
+    <string name="title_activity_signout">title_activity_signout</string>
+    <string name="title_activity_driverdetail">DriverdetailActivity</string>
+    <string name="title_activity_carTab">title_activity_carTab</string>
+    <string name="title_activity_current_rydedetail">CurrentRydedetail</string>
+    <string name="title_activity_booker_addcar">BookerAddcar</string>
+    <string name="title_activity_bookercurrent_ryde">BookercurrentRyde</string>
+    <string name="title_activity_booker_bookings">BookerBookings</string>
+    <string name="title_activity_booker_search">BookerSearch</string>
+
+</resources>

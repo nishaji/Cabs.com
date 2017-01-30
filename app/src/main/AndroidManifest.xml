@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.spry.viewpagerwithanimation">
+
+    <uses-sdk
+        android:maxSdkVersion="21"
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.compass"
+        android:required="true" />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-library android:name="com.google.android.maps" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".ParseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/car3"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleTask"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".SignupActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_signup"
+            android:parentActivityName=".Welcome1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Welcome2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_welcome2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddcarActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_addcar"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SuccessfulActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_successful"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Firstlaunchtutorial"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_firstlaunchtutorial"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Welcome1"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_welcome1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddDriverActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_add_driver"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".TripsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_trips"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBaLxpkS5JO1O57IQMPbX_MU1n_zLB-4BE" />
+
+        <activity
+            android:name=".LoginSignupActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_login_signup"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Bookings"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_bookings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MapsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/title_activity_maps"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MapsActivity2"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_maps2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".OfferRyde"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_offer"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".HomeFragment"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".LogOutActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_logOut"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <provider
+            android:name=".Cars"
+            android:authorities="com.demo.spry.viewpagerwithanimation.cars"
+            android:exported="false" />
+
+        <activity
+            android:name=".EditAddCarActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_edit_add_car"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".EditTripActivity"
+            android:label="@string/title_activity_edit_trip"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SignOut"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_signout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:name=".Bookinghistory1"
+            android:label="@string/title_activity_carTab"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".CurrentRydedetail"
+            android:label="@string/title_activity_current_rydedetail"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:name=".BookerAddcar"
+            android:label="@string/title_activity_booker_addcar"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:name=".BookercurrentRyde"
+            android:label="@string/title_activity_bookercurrent_ryde"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:name=".BookerBookings"
+            android:label="@string/title_activity_booker_bookings"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:name=".BookerSearch"
+            android:label="@string/title_activity_booker_search"
+            android:theme="@style/AppTheme"/>
+    </application>
+</manifest>

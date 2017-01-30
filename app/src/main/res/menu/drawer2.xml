@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/search"
+            android:checked="false"
+            android:icon="@drawable/search2"
+            android:title="@string/search" />
+        <item
+            android:id="@+id/addcar"
+            android:checked="false"
+            android:icon="@drawable/qw"
+            android:title="@string/add_car" />
+        <item
+            android:id="@+id/aboutus"
+            android:checked="false"
+            android:icon="@drawable/about3"
+            android:title="@string/about_us" />
+        <item
+            android:id="@+id/offer"
+            android:checked="false"
+            android:icon="@drawable/car1"
+            android:title="Book Ryde" />
+        <item
+            android:id="@+id/signout"
+            android:checked="false"
+            android:icon="@drawable/logout"
+            android:title="@string/signout" />
+    </group>
+</menu>

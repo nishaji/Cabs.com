@@ -1,0 +1,256 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/tool_bar"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:textColor="#000"
+                    android:textStyle="normal"
+                    android:textSize="15dp"
+                    android:id="@+id/textView_from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Car Type" />
+
+                <Spinner
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/cartype"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/spinner_background"
+                    android:popupBackground="#B3BBCC"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="4dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:textColor="#000"
+                    android:textStyle="normal"
+                    android:textSize="15dp"
+                    android:id="@+id/textView_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seat" />
+
+                <Spinner
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/seat"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/spinner_background"
+                    android:popupBackground="#B3BBCC"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="238dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:textColor="#000"
+                    android:textStyle="normal"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Route" />
+
+                <Spinner
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/route"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/spinner_background"
+                    android:popupBackground="#B3BBCC"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+                <TextView
+                    android:text="Pick Time"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="15"
+                    />
+                <ImageButton
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="20dp"
+                    android:background="@drawable/button_border1"
+                    android:id="@+id/time_button"
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/clock1"
+                    android:text="@string/pick_date"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/time_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="15"
+                    />>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:text="Pick Date"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="15"
+                    />
+
+                <ImageButton
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="20dp"
+                    android:background="@drawable/button_border"
+                    android:id="@+id/date_button"
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/calendar"
+                    android:text="@string/pick_date"
+                    android:layout_marginLeft="10dp"/>
+                />
+                <TextView
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/date_textview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="35"
+                    />
+                <CheckBox
+                    android:visibility="gone"
+                    android:id="@+id/mode_24_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mode_24_hours" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:layout_width="200dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnsubmit"
+            android:text="Search"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:background="@drawable/btn4"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            tools:context=".MainActivity"
+            android:layout_marginTop="10dp">
+            <ListView
+                android:id="@+id/homelistView"
+                android:layout_width="fill_parent"
+                android:layout_height="229dp"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="5dp"
+                 />
+            <TextView
+                android:id="@+id/empty_list_view"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="No Result Found"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

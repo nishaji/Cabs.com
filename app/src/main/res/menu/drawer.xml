@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group  android:id="@+id/firstmenu" android:checkableBehavior="single">
+        <item android:title="Provider Lists" >
+                <item
+                    android:id="@+id/home"
+                    android:checked="false"
+                    android:icon="@drawable/home1"
+                    android:title="@string/navigation_item_1" />
+                <item
+                    android:checked="false"
+                    android:id="@+id/carlist"
+                    android:icon="@drawable/ic_star_black"
+                    android:title="Car List" />
+                <item
+                    android:id="@+id/driverlist"
+                    android:checked="false"
+                    android:icon="@drawable/ic_star_black"
+                    android:title="Driver List" />
+                <item
+                    android:id="@+id/triplist"
+                    android:checked="false"
+                    android:icon="@drawable/ic_star_black"
+                    android:title="Trip List" />
+        </item>
+    </group>
+    <group android:id="@+id/secondmenu" android:checkableBehavior="single">
+        <item android:title="Detail Lists" >
+            <item
+                    android:checked="false"
+                    android:id="@+id/driverdetail"
+                    android:icon="@drawable/detail"
+                    android:title="Driver Detail" />
+                <item
+                    android:id="@+id/tripdetail"
+                    android:checked="false"
+                    android:icon="@drawable/detail"
+                    android:title="@string/trip_detail" />
+            <item
+                android:id="@+id/bookinghistory"
+                android:checked="false"
+                android:icon="@drawable/detail"
+                android:title="BookingHistory" />
+
+        </item>
+        </group>
+    <group android:id="@+id/thirdmenu" android:checkableBehavior="single">
+        <item android:title="Other Screens" >
+                 <item
+                    android:id="@+id/aboutus"
+                    android:checked="false"
+                    android:icon="@drawable/about3"
+                    android:title="@string/about_us" />
+                <item
+                    android:id="@+id/offer"
+                    android:checked="false"
+                    android:icon="@drawable/car1"
+                    android:title="Add Ryde" />
+            <item
+                android:id="@+id/search"
+                android:checked="false"
+                android:icon="@drawable/search2"
+                android:title="@string/search" />
+
+                <item
+                    android:id="@+id/signout"
+                    android:checked="false"
+                    android:icon="@drawable/logout"
+                    android:title="@string/signout" />
+    </item>
+    </group>
+</menu>
